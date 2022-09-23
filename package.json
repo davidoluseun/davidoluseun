@@ -23,6 +23,7 @@
     "joi-phone-number": "^5.1.1",
     "mongoose": "^6.5.4",
     "nodemailer": "^6.7.8",
+    "ts-node": "^10.9.1",
     "winston": "^3.8.1"
   },
   "devDependencies": {
@@ -33,7 +34,6 @@
     "@types/nodemailer": "^6.4.5",
     "concurrently": "^7.3.0",
     "nodemon": "^2.0.19",
-    "ts-node": "^10.9.1",
     "typescript": "^4.8.2"
   }
 }
