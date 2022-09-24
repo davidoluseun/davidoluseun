@@ -20,13 +20,11 @@ export function logging() {
     new transports.File({ filename: "exceptions.log" })
   );
 
-  if (process.env.NODE_ENV !== "production") {
-    logger.add(
-      new transports.Console({
-        format: format.combine(format.colorize(), format.simple()),
-      })
-    );
-  }
+  logger.add(
+    new transports.Console({
+      format: format.combine(format.colorize(), format.simple()),
+    })
+  );
 }
 
 export default logger;
