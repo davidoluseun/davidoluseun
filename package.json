@@ -7,7 +7,7 @@
     "start": "ts-node index.ts",
     "server": "nodemon index.ts --ignore frontend/",
     "client": "npm start --prefix frontend",
-    "build": "npm run build --prefix frontend",
+    "clientbuild": "npm run build --prefix frontend",
     "dev": "concurrently \"npm run server\"  \"npm run client\""
   },
   "engines": {
