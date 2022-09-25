@@ -2,10 +2,11 @@
   "name": "davidoluseun",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "build/index.js",
   "scripts": {
-    "start": "ts-node index.ts",
-    "server": "nodemon index.ts --ignore frontend/",
+    "start": "node build/index.js",
+    "server": "concurrently \"npx tsc --watch\" \"nodemon -q build/index.js --ignore frontend/\"",
+    "build": "npx tsc",
     "client": "npm start --prefix frontend",
     "clientbuild": "npm run build --prefix frontend",
     "dev": "concurrently \"npm run server\"  \"npm run client\""
